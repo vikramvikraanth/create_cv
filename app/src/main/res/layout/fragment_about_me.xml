@@ -1,0 +1,186 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.muv.createcv.Fragment.AboutMeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                card_view:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/Propicture"
+                        android:layout_width="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_height="100dp"
+                        fresco:placeholderImage="@drawable/user" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="Name"
+                    android:textColor="@color/colortile"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text=""
+                    android:id="@+id/txtName"
+                    android:textColor="@color/colorContent"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="Email"
+                    android:textColor="@color/colortile"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text=""
+                    android:id="@+id/txtEmail"
+                    android:textColor="@color/colorContent"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="Date Of Birth"
+                    android:textColor="@color/colortile"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text=""
+                    android:id="@+id/txtDob"
+                    android:textColor="@color/colorContent"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="Qualification"
+                    android:textColor="@color/colortile"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text=""
+                    android:id="@+id/txtQualification"
+                    android:textColor="@color/colorContent"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="Destination"
+                    android:textColor="@color/colortile"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text=""
+                    android:id="@+id/txtDestination"
+                    android:textColor="@color/colorContent"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="Address"
+                    android:textColor="@color/colortile"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:text=""
+                    android:id="@+id/txtAddress"
+                    android:textColor="@color/colorContent"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+       </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+    </RelativeLayout>
+</FrameLayout>

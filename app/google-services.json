@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "105516282064",
+    "firebase_url": "https://createcv-1e398.firebaseio.com",
+    "project_id": "createcv-1e398",
+    "storage_bucket": "createcv-1e398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105516282064:android:d8c30a0a56f9ab41",
+        "android_client_info": {
+          "package_name": "com.muv.createcv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105516282064-3v05hqs9c0i3l5urbjjtji9qdmau2qgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVGLFTGUi0TVhev_FeuB7d86s3BFZtNnA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

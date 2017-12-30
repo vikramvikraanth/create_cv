@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.muv.createcv.Fragment.ContantFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:background="@color/colorPrimaryDark"
+      android:layout_height="match_parent">
+      <fragment
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:weightSum="4"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="20sp"
+          android:orientation="horizontal">
+          <ImageButton
+              android:layout_width="match_parent"
+              android:layout_marginStart="10sp"
+              android:layout_marginEnd="10sp"
+              android:layout_weight="1"
+              android:id="@+id/imagbtFb"
+              android:layout_marginTop="10dp"
+              android:background="@null"
+              android:src="@drawable/ic_fb"
+              android:layout_height="wrap_content" />
+          <ImageButton
+              android:layout_width="match_parent"
+              android:layout_marginStart="10sp"
+              android:id="@+id/imgbtLinkedin"
+              android:layout_marginEnd="10sp"
+              android:layout_weight="1"
+              android:layout_marginTop="10dp"
+              android:background="@null"
+              android:src="@drawable/ic_linkedin"
+
+              android:layout_height="wrap_content" />
+          <ImageButton
+              android:layout_width="match_parent"
+              android:layout_marginStart="10sp"
+              android:layout_marginEnd="10sp"
+              android:layout_weight="1"
+              android:layout_marginTop="10dp"
+              android:background="@null"
+              android:id="@+id/imgbttwitter"
+              android:src="@drawable/ic_twitter"
+              android:layout_height="wrap_content" />
+          <ImageButton
+              android:layout_width="match_parent"
+              android:layout_marginStart="10sp"
+              android:layout_marginEnd="10sp"
+              android:layout_weight="1"
+              android:layout_marginTop="10dp"
+              android:background="@null"
+              android:id="@+id/imgbtWhatsapp"
+              android:src="@drawable/ic_whatsapp"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_alignParentBottom="true"
+          android:background="@color/colorPrimaryDark"
+          android:layout_height="80dp">
+          <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/Propicture"
+              android:layout_width="60dp"
+              android:layout_alignParentTop="true"
+              android:layout_marginStart="10sp"
+              android:layout_marginTop="10sp"
+              android:layout_height="60dp"
+              fresco:placeholderImage="@drawable/user"
+              android:layout_marginLeft="10sp" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="vikram"
+              android:id="@+id/txtUserName"
+              android:layout_marginEnd="20sp"
+              android:layout_toEndOf="@+id/Propicture"
+              android:layout_marginTop="15sp"
+              android:layout_marginStart="10sp"
+              android:singleLine="true"
+              android:textStyle="bold"
+              android:textSize="18sp"
+              android:textColor="@color/colorPrimary"
+              android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+              android:layout_toRightOf="@+id/Propicture"
+              android:layout_marginRight="20sp"
+              android:layout_marginLeft="10sp" />
+
+          <TextView
+              android:id="@+id/txtAddress"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toEndOf="@+id/Propicture"
+              android:layout_marginEnd="20sp"
+              android:layout_marginStart="10sp"
+              android:singleLine="true"
+              android:layout_marginTop="5sp"
+              android:textSize="15dp"
+              android:maxLines="5"
+              android:layout_below="@+id/txtUserName"
+              android:hint="Address"
+              android:textColorHint="@color/colorPrimary"
+              android:textColor="@color/colorPrimary"
+              android:ellipsize="end"
+              android:layout_toRightOf="@+id/Propicture"
+              android:layout_marginRight="20sp"
+              android:layout_marginLeft="10sp" />
+
+      </RelativeLayout>
+  </RelativeLayout>
+
+</FrameLayout>
